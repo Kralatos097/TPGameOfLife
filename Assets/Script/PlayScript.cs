@@ -6,48 +6,39 @@ using UnityEngine.Tilemaps;
 public class PlayScript : MonoBehaviour
 {
     [Header("Values")]
-    public int GridSize;
+    public static int GridSize = 4;
     public float UpdateTimer;
     
     [Header("Drag'n Drop")]
     public Tilemap tilemap;
     public Tile BlackTile;
     public Tile WhiteTile;
+
+    public Camera Camera;
     
     private float _updateTimer;
     
-    private int[,] Grid;
+    public static int[,] Grid;
     private int[,] tempGrid;
 
     // Start is called before the first frame update
     void Start()
     {
-        tilemap.size = new Vector3Int(GridSize, GridSize, 0);
-        tilemap.ResizeBounds();
+        Camera.transform.position = new Vector3(GridSize/2, GridSize/2, -GridSize);
 
         _updateTimer = UpdateTimer;
         
         //Grid = new int[GridSize, GridSize];
-        Grid = new int[,]{
+        /*Grid = new int[,]{
             {0,1,0,0},
-            {0,1,1,0},
-            {0,1,1,0},
-            {0,0,1,0}
-        };
+            {0,1,0,0},
+            {0,1,0,0},
+            {0,0,0,0}
+        };*/
         
         tempGrid = new int[GridSize, GridSize];
         
         PrintGrid();
-
-        /*for (int i = 0; i < GridSize-1; i++)
-        {
-            for (int j = 0; j < GridSize-1; j++)
-            {
-                TileBase t = tilemap.GetTile(new Vector3Int(i, j, 0));
-                
-                if(t == )
-            }
-        }*/
     }
 
     // Update is called once per frame
@@ -63,7 +54,7 @@ public class PlayScript : MonoBehaviour
                 }
             }
 
-            Grid = (int[,])tempGrid.Clone();
+            Grid = (int[,])tempGrid/*.Clone()*/;
             tempGrid = new int[GridSize,GridSize];
             PrintGrid();
             
@@ -96,7 +87,6 @@ public class PlayScript : MonoBehaviour
                 }
             }
         }
-
         return nbVoisin;
     }
 
@@ -105,7 +95,6 @@ public class PlayScript : MonoBehaviour
         int nbVoisin = GetNbVoisin(x, y);
         int state = Grid[x, y];
         
-        //Debug.Log(nbVoisin + " / " + x + " / " + y);
         if (nbVoisin == 3)
         {
             tempGrid[x, y] = 1;
