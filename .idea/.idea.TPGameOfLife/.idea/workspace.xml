@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39e2a95a-17f2-4087-bf9c-139fd016bc43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/creationScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/creationScene.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TPGameOfLife/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TPGameOfLife/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CreationScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CreationScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Palette.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Palette.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayScript.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/black.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/black.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/black.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/white.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/white.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/white.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641552908235</updated>
-      <workItem from="1641552919537" duration="15134000" />
+      <workItem from="1641552919537" duration="16301000" />
     </task>
     <servers />
   </component>
